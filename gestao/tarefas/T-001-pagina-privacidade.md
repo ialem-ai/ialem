@@ -3,7 +3,7 @@
 **Em uma frase:** o site ganha `/privacidade` e `/exclusao-de-dados`, com link no rodapé, para a Meta aceitar a publicação do app `IAlem Atendimento` (D-010 do `ia-atendimento`).
 **Decide o quê:** o Junior aprova o texto e a página na prévia local antes de publicar.
 
-- **Status:** a fazer
+- **Status:** concluída (publicação aprovada pelo Junior em 2026-11-15: "Aprovo, publica")
 - **Aprovação:** pedido do gerente do `ia-atendimento`, aprovado pelo Junior: "Sim, pede" (2026-11-15). Decisões do texto nas respostas do Junior de 2026-11-15 (ver [docs/legal/politica-privacidade.md](../../docs/legal/politica-privacidade.md)).
 - **Agente:** ialem-dev-frontend · **Modelo:** sonnet · **Tamanho:** P
 - **Área que decide:** texto: `ialem-seguranca` ([proposta](../../docs/seguranca/politica-privacidade-proposta.md)); tela: `ialem-designer` ([especificação](../../docs/design/pagina-legal.md), [mockup](../../docs/design/mockups/pagina-legal.html))
