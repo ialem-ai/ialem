@@ -49,4 +49,10 @@ Publicar o texto final aprovado em duas páginas indexáveis, no modelo do desig
 ---
 
 ## Relatório do agente
-_(preenchido por quem executou)_
+**Resumo:** criadas `/privacidade` (12 seções, índice, tabela) e `/exclusao-de-dados` (4 seções, sem índice), com cabeçalho legal, layout `(legal)`, rodapé com os dois links, CNPJ corrigido (66.012.830/0001-47) e `.footer-bottom` em `--text-dim`. Status: pronta para o Junior aprovar na prévia.
+
+**Arquivos:** `src/app/(legal)/layout.tsx`, `legal.css`, `privacidade/page.tsx`, `exclusao-de-dados/page.tsx`, `src/components/LegalHeader.tsx`, `src/components/Footer.tsx`, `src/app/globals.css` (só rodapé e `scroll-behavior: auto`). Prints em `docs/design/mockups/prints/implementado/` (fora do escopo de código; só imagens).
+
+**Provas:** `npm run build` ok, `/privacidade` e `/exclusao-de-dados` estáticas. `npm run lint`: 1 erro preexistente em `src/app/apresentacao/page.tsx:32` (`<a href="/">`, fora do escopo) e 30 avisos de `<img>` preexistentes; nenhum nos arquivos novos. `scrollWidth === innerWidth` e zero caixas cruzadas em 375/768/1440 nas 4 telas.
+
+**Desvios/decisões:** (1) texto tem 12 seções (inclui `inteligencia-artificial`, ausente da tabela da especificação); numeração 01 a 12. (2) tabela e `h3` ("Transferência para fora do Brasil") não existem no mockup: criados com tokens; no 375 a tabela vira blocos rótulo/valor. (3) sem `legal-shortcut` na política (não está no texto aprovado; palavra por palavra). (4) segundo link do rodapé aponta para `/exclusao-de-dados`. (5) `legal.css` traz `:focus-visible` dourado; por ser CSS de layout, pode vazar para a home em navegação client-side (Next mantém folha carregada); reportar ao designer se for problema. (6) texto de ancora `.legal-sec:target` conforme especificação.

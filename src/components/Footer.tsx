@@ -1,3 +1,4 @@
+import Link from "next/link";
 import IAlemLogo from "./IAlemLogo";
 
 export default function Footer() {
@@ -39,7 +40,11 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <span>© 2026 IAlem Agência de Automação Inteligente</span>
-        <span>CNPJ 66.012.830/0001-4 · Brasil</span>
+        <nav className="footer-legal" aria-label="Documentos legais">
+          <Link href="/privacidade">Política de privacidade</Link>
+          <Link href="/exclusao-de-dados">Exclusão de dados</Link>
+        </nav>
+        <span>CNPJ 66.012.830/0001-47 · Brasil</span>
       </div>
     </footer>
   );
